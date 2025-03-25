@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -12,7 +13,7 @@ const NavBar = () => {
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex space-x-6">
-                    <li className="text-white font-bold cursor-pointer">Login</li>
+                    <li className="text-white font-bold cursor-pointer"><Link to="/login">Login</Link></li>
                     <li className="text-white font-bold cursor-pointer">Register</li>
                     <li className="text-white font-bold cursor-pointer">Profile</li>
                 </ul>
